@@ -438,6 +438,10 @@ MonoBehaviour:
   jumpAction: {fileID: -2099379676528639254, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   moveSpeed: 5
   jumpForce: 5
+  attackAction: {fileID: 1120369429361536294, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  skillAction: {fileID: 0}
+  animator: {fileID: 0}
+  attackCooldown: 0.3
 --- !u!114 &671005128
 MonoBehaviour:
   m_ObjectHideFlags: 0
