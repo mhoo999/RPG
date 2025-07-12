@@ -33,9 +33,9 @@ public class AgentController : MonoBehaviour
 
     private void HandleAnimations()
     {
-        bool isMoving = rb.linearVelocity.x != 0;
-
-        animator.SetBool("isMoving", isMoving);
+        animator.SetFloat("xVelocity", rb.linearVelocity.x);
+        animator.SetFloat("yVelocity", rb.linearVelocity.y);
+        animator.SetBool("isGrounded", isGrounded);
     }
 
     void OnEnable()
