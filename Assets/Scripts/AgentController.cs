@@ -23,6 +23,19 @@ public class AgentController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         originalScale = transform.localScale;
+        animator = GetComponentInChildren<Animator>();
+    }
+
+    private void Update()
+    {
+        HandleAnimations();
+    }
+
+    private void HandleAnimations()
+    {
+        bool isMoving = rb.linearVelocity.x != 0;
+
+        animator.SetBool("isMoving", isMoving);
     }
 
     void OnEnable()
